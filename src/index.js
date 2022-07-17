@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Main from "./Foodiez";
+import Foodiez from "./Foodiez";
  
 ReactDOM.render(
-  <Main/>, 
+  <Foodiez/>, 
   document.getElementById("content")
 );
