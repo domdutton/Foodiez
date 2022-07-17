@@ -4,5 +4,5 @@ import Main from "./Foodiez";
  
 ReactDOM.render(
   <Main/>, 
-  document.getElementById("root")
+  document.getElementById("content")
 );
