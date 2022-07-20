@@ -1,8 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Foodiez from "./Foodiez";
- 
-ReactDOM.render(
-  <Foodiez/>, 
-  document.getElementById("content")
+import { createRoot } from 'react-dom/client';
+const root = createRoot(document.getElementById("content"));
+root.render(
+  <Foodiez/>
 );
