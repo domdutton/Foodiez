@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-import Container from 'react-bootstrap/Container'
+import Container from 'react-bootstrap/Container';
+import Figure from 'react-bootstrap/Figure';
+var applicationId = '7844cb72';
+var applicationKey = 'd6487333a646543fabad04afba07a8bc';
 class Catalogue extends Component {
   constructor(props) {
       super(props);
@@ -9,12 +12,12 @@ class Catalogue extends Component {
       };
   }
   componentDidMount() {
-      fetch("https://api.edamam.com/api/recipes/v2")
+      fetch("https://api.edamam.com/api/recipes/v2?type=public&app_id=" + applicationId + "&app_key=" + applicationKey + "&q=chicken")
           .then((res) => res.json())
           .then((json) => {
-            console.log(json);
+            console.log(json.hits);
               this.setState({
-                  items: json,
+                  items: json.hits,
                   recipesLoaded: true
               });
           })
@@ -29,13 +32,16 @@ class Catalogue extends Component {
  
       return (
       <Container className = "page-content">
-          <h1> Fetch data from an api in react </h1>  {
-              items.map((item) => ( 
-              <ol key = { item.id } >
-                  User_Name: { item.username }, 
-                  Full_Name: { item.name }, 
-                  User_Email: { item.email } 
-                  </ol>
+          <h1>Our Top Chicken Recipe Selection</h1>  {
+              items.map((item, index) => (
+                <Figure key={index}>
+                    <Figure.Image 
+                        src={item.recipe.image}
+                    />
+                    <Figure.Caption>
+                        { item.recipe.label}
+                    </Figure.Caption>
+                </Figure>
               ))
           }
       </Container>
