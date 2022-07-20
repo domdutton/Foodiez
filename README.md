@@ -5,7 +5,7 @@ This is a simple react application that provides an online directory for recipes
 - Select a recipe and view finer details of the same
 
 ### Screenshot
-![Foodiez App Screenshot](/screenshots/banner.jpg?raw=true "Foodiez App Screenshot")
+![Foodiez App Screenshot](/screenshot.png?raw=true "Foodiez App Screenshot")
 
 ### Technologies Used
 The application is built with:
