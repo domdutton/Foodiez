@@ -1,8 +1,13 @@
 import React, { Component } from "react";
 import Container from 'react-bootstrap/Container';
 import Figure from 'react-bootstrap/Figure';
-var applicationId = '7844cb72';
-var applicationKey = 'd6487333a646543fabad04afba07a8bc';
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
+var applicationId = 'fd48e7de';
+var applicationKey = 'fbedb101903e8235ee9a899394ba3a19';
+function get_id(url) {
+  return url.split('#').pop();
+}
 class Catalogue extends Component {
   constructor(props) {
       super(props);
@@ -39,8 +44,9 @@ class Catalogue extends Component {
                         src={item.recipe.image}
                     />
                     <Figure.Caption>
-                        { item.recipe.label}
+                        <h5 class="text-center"><strong>{ item.recipe.label}</strong></h5>
                     </Figure.Caption>
+                    <div class="text-center"><Button variant="success" as={Link} to={`/detail?id=${get_id(item.recipe.uri)}`}>View Details</Button></div>
                 </Figure>
               ))
           }
