@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom'
 import { Container, Figure } from 'react-bootstrap'
 import { Spinner } from 'react-bootstrap'
 
-const applicationId = 'fd48e7de'
-const applicationKey = 'fbedb101903e8235ee9a899394ba3a19'
-
 function get_id(url) {
   return url.split('#').pop()
 }
@@ -32,9 +29,9 @@ class Catalogue extends Component {
 
     fetch(
       'https://api.edamam.com/api/recipes/v2?type=public&app_id=' +
-        applicationId +
+        process.env.REACT_APP_CATALOGUE_ID +
         '&app_key=' +
-        applicationKey +
+        process.env.REACT_APP_CATALOGUE_KEY +
         '&q=' +
         search_str
     )

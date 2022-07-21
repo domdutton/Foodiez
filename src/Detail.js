@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 
 import { Badge, Container, Image, Row, Spinner } from 'react-bootstrap'
 
-const applicationId = '7844cb72'
-const applicationKey = 'd6487333a646543fabad04afba07a8bc'
-
 class Detail extends Component {
   constructor(props) {
     super(props)
@@ -28,9 +25,9 @@ class Detail extends Component {
       'https://api.edamam.com/api/recipes/v2/' +
         id +
         '?type=public&app_id=' +
-        applicationId +
+        process.env.REACT_APP_DETAIL_ID +
         '&app_key=' +
-        applicationKey +
+        process.env.REACT_APP_DETAIL_KEY +
         '&q=chicken'
     )
       .then((res) => res.json())
