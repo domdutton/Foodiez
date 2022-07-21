@@ -17,7 +17,10 @@ class Catalogue extends Component {
       };
   }
   componentDidMount() {
-      fetch("https://api.edamam.com/api/recipes/v2?type=public&app_id=" + applicationId + "&app_key=" + applicationKey + "&q=chicken")
+    const search = window.location.search;
+    const params = new URLSearchParams(search);
+    const search_str = params.get('search');
+      fetch("https://api.edamam.com/api/recipes/v2?type=public&app_id=" + applicationId + "&app_key=" + applicationKey + "&q=" + search_str)
           .then((res) => res.json())
           .then((json) => {
             console.log(json.hits);
