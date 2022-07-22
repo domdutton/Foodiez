@@ -29,9 +29,9 @@ class Catalogue extends Component {
 
     fetch(
       'https://api.edamam.com/api/recipes/v2?type=public&app_id=' +
-        process.env.REACT_APP_CATALOGUE_ID +
+        process.env.REACT_APP_DETAIL_ID +
         '&app_key=' +
-        process.env.REACT_APP_CATALOGUE_KEY +
+        process.env.REACT_APP_DETAIL_KEY +
         '&q=' +
         search_str
     )
