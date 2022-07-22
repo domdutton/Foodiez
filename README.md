@@ -1,8 +1,9 @@
 ### Description:
 This is a simple react application that provides an online directory for recipes. It allows users to:
-- View a catalogue of recipes
 - Search for specific recipes with keywords
 - Select a recipe and view finer details ingredients
+- Select tab for about us information
+- Select tab for contact information
 
 ### Deployed Application Link:
 
