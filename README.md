@@ -2,12 +2,12 @@
 This is a simple react application that provides an online directory for recipes. It allows users to:
 - View a catalogue of recipes
 - Search for specific recipes with keywords
-- Select a recipe and view finer details of the same
+- Select a recipe and view finer details ingredients
 
 
 ### Screenshot
 
-
+![ScreenShot](PageScreenshot.png)
 
 ### Technologies Used
 The application is built with:
