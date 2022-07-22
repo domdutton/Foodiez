@@ -4,7 +4,9 @@ This is a simple react application that provides an online directory for recipes
 - Search for specific recipes with keywords
 - Select a recipe and view finer details of the same
 
+
 ### Screenshot
+
 
 
 ### Technologies Used
@@ -13,7 +15,7 @@ The application is built with:
 2. React-Bootstrap - A powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more.
 3. Edamam Recipe-API - https://developer.edamam.com/edamam-docs-recipe-api
 
-### Get Started/Installation Instructures:
+### Getting Started/Installation Instructions:
 npm start
     Starts the development server.
 
