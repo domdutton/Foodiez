@@ -11,7 +11,7 @@ https://foodiezrecipes.netlify.app/
 
 ### Screenshot:
 
-![ScreenShot](PageScreenshot.png)
+![ScreenShot](/public/PageScreenshot.png)
 
 ### Technologies Used:
 The application is built with:
