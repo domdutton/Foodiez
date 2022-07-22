@@ -1,15 +1,19 @@
-### Description
+### Description:
 This is a simple react application that provides an online directory for recipes. It allows users to:
 - View a catalogue of recipes
 - Search for specific recipes with keywords
 - Select a recipe and view finer details ingredients
 
+### Deployed Application Link:
 
-### Screenshot
+https://foodiezrecipes.netlify.app/
+
+
+### Screenshot:
 
 ![ScreenShot](PageScreenshot.png)
 
-### Technologies Used
+### Technologies Used:
 The application is built with:
 1. ReactJS - A JavaScript library for building user interfaces
 2. React-Bootstrap - A powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more.
