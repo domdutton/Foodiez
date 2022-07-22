@@ -38,6 +38,9 @@ class Detail extends Component {
           recipesLoaded: true,
         })
       })
+      .catch((error) => {
+        console.log(error)
+      });
   }
 
   render() {

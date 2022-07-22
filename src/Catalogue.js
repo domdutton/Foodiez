@@ -43,6 +43,9 @@ class Catalogue extends Component {
           recipesLoaded: true,
         })
       })
+      .catch((error) => {
+        console.log(error)
+      });
   }
   render() {
     const { recipesLoaded, items, searchString } = this.state
